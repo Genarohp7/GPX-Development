@@ -1,0 +1,15 @@
+.navbar .container .collapse .navbar-nav {
+  gap: 10px;
+}
+
+.navbar .container .collapse .navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  width: 9vw;
+  height: 5vh;
+  background-color: rgb(255, 255, 255, 50%);
+}
+
+.navbar .container .collapse .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+}

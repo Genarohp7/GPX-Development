@@ -25,13 +25,16 @@
       rel="stylesheet"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles1.css" />
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container px-4 px-lg-5">
-        <img src="./assets/img/1.svg" style="height: 5vh; width: 5vw" alt="" />
+        <a href="./index.html" class="logo-main"
+          ><img src="./assets/img/1.svg" alt=""
+        /></a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -46,13 +49,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about">Nosotros</a>
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Proyectos</a>
+              <a class="nav-link" href="./proyectos.html">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#signup">Contacto</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -65,7 +68,7 @@
         <div class="row gx-4 gx-lg-5">
           <div class="col-md-10 col-lg-8 mx-auto text-center">
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Quieres mas informacion?</h2>
+            <!-- <h2 class="text-white mb-5">Quieres mas informacion?</h2> -->
             <!-- * * * * * * * * * * * * * * *-->
             <!-- * * SB Forms Contact Form * *-->
             <!-- * * * * * * * * * * * * * * *-->
@@ -85,7 +88,7 @@
                     class="form-control"
                     id="emailAddress"
                     type="email"
-                    placeholder="Correo electronico..."
+                    placeholder="e-mail para mas informacion"
                     aria-label="Enter email address..."
                     data-sb-validations="required,email"
                   />
