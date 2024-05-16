@@ -13,3 +13,14 @@
 .navbar .container .collapse .navbar-nav .nav-item .nav-link {
   font-weight: 600;
 }
+
+.text-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.text-icon .fas {
+  font-size: 3rem;
+}
