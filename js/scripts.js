@@ -49,3 +49,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+
+//proyectos secction
+
+let $selfTeam = document.querySelector(".selfteam");
+let anchoVentana = window.innerWidth;
+
+if ((anchoVentana) => 50) {
+  setInterval(() => {
+    let $last = $selfTeam.firstElementChild;
+    $last.remove();
+    $selfTeam.appendChild($last);
+  }, 2000);
+} else {
+}
