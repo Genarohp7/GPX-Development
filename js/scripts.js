@@ -50,9 +50,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-//proyectos secction
+//proyectos secction doobarin
 
-let $selfTeam = document.querySelector(".selfteam");
+let $selfTeam = document.getElementById("doobarin");
 let anchoVentana = window.innerWidth;
 
 if ((anchoVentana) => 50) {
@@ -60,6 +60,32 @@ if ((anchoVentana) => 50) {
     let $last = $selfTeam.firstElementChild;
     $last.remove();
     $selfTeam.appendChild($last);
+  }, 2000);
+} else {
+}
+
+//proyectos secction citadel
+
+let $selfTeam1 = document.getElementById("citadel");
+let anchoVentana1 = window.innerWidth;
+
+if ((anchoVentana1) => 50) {
+  setInterval(() => {
+    let $last1 = $selfTeam1.firstElementChild;
+    $last1.remove();
+    $selfTeam1.appendChild($last1);
+  }, 2000);
+} else {
+}
+
+let $selfTeam2 = document.getElementById("garambullo");
+let anchoVentana2 = window.innerWidth;
+
+if ((anchoVentana2) => 50) {
+  setInterval(() => {
+    let $last2 = $selfTeam2.firstElementChild;
+    $last2.remove();
+    $selfTeam2.appendChild($last2);
   }, 2000);
 } else {
 }
