@@ -52,40 +52,61 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 //proyectos secction doobarin
 
-let $selfTeam = document.getElementById("doobarin");
-let anchoVentana = window.innerWidth;
+// let selfTeam = document.getElementById("doobarin");
+// let anchoVentana = window.innerWidth;
 
-if ((anchoVentana) => 50) {
-  setInterval(() => {
-    let $last = $selfTeam.firstElementChild;
-    $last.remove();
-    $selfTeam.appendChild($last);
-  }, 2000);
-} else {
-}
+// if ((anchoVentana) => 50) {
+//   setInterval(() => {
+//     let $last = selfTeam.firstElementChild;
+//     $last.remove();
+//     selfTeam.appendChild($last);
+//   }, 2000);
+// } else {
+// }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let selfTeam = document.getElementById("doobarin");
+  let anchoVentana = window.innerWidth;
+
+  if (selfTeam && anchoVentana >= 50) {
+    setInterval(() => {
+      if (selfTeam.children.length > 0) {
+        let $last = selfTeam.firstElementChild;
+        selfTeam.removeChild($last);
+        selfTeam.appendChild($last);
+      }
+    }, 2000);
+  }
+});
 
 //proyectos secction citadel
+document.addEventListener("DOMContentLoaded", function () {
+  let selfTeam1 = document.getElementById("citadel");
+  let anchoVentana1 = window.innerWidth;
 
-let $selfTeam1 = document.getElementById("citadel");
-let anchoVentana1 = window.innerWidth;
+  if (selfTeam1 && anchoVentana1 >= 50) {
+    setInterval(() => {
+      if (selfTeam1.children.length > 0) {
+        let $last = selfTeam1.firstElementChild;
+        selfTeam1.removeChild($last);
+        selfTeam1.appendChild($last);
+      }
+    }, 2000);
+  }
+});
 
-if ((anchoVentana1) => 50) {
-  setInterval(() => {
-    let $last1 = $selfTeam1.firstElementChild;
-    $last1.remove();
-    $selfTeam1.appendChild($last1);
-  }, 2000);
-} else {
-}
+//proyectos secction garambullo
+document.addEventListener("DOMContentLoaded", function () {
+  let selfTeam2 = document.getElementById("garambullo");
+  let anchoVentana2 = window.innerWidth;
 
-let $selfTeam2 = document.getElementById("garambullo");
-let anchoVentana2 = window.innerWidth;
-
-if ((anchoVentana2) => 50) {
-  setInterval(() => {
-    let $last2 = $selfTeam2.firstElementChild;
-    $last2.remove();
-    $selfTeam2.appendChild($last2);
-  }, 2000);
-} else {
-}
+  if (selfTeam2 && anchoVentana2 >= 50) {
+    setInterval(() => {
+      if (selfTeam2.children.length > 0) {
+        let $last = selfTeam2.firstElementChild;
+        selfTeam2.removeChild($last);
+        selfTeam2.appendChild($last);
+      }
+    }, 2000);
+  }
+});

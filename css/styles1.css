@@ -25,6 +25,12 @@
   font-size: 3rem;
 }
 
+/* on index  */
+.move {
+  position: relative !important;
+  top: 150px;
+}
+
 /* servicios */
 
 .selfteam {
@@ -56,10 +62,15 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
+  .mobil {
+    position: relative;
+    top: 220px;
+  }
+
   .selfteam {
     position: relative;
     height: 50vh;
-    width: 100vw;
+    width: 90vw;
     transform-style: preserve-3d;
   }
 
