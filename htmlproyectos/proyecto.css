@@ -1,0 +1,107 @@
+.mainproyect {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  gap: 100px;
+}
+
+.mainproyect .proyecto {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.mainproyect .proyecto .imgproyecto {
+  display: flex;
+  overflow: hidden;
+  width: 30vw;
+  height: 40vh;
+}
+
+.mainproyect .proyecto .imgproyecto img {
+  width: 30vw;
+  height: 40vh;
+  transform: scale(1.1);
+}
+
+.mainproyect .btn-izquierda,
+.mainproyect .btn-derecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.mainproyect .btn-izquierda {
+  left: 0;
+}
+
+.mainproyect .btn-derecha {
+  right: 0;
+}
+
+@media screen and (min-width: 1px) and (max-width: 480px) {
+  .mainproyect {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+
+  .mainproyect .proyecto {
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .mainproyect .proyecto .imgproyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 50rem;
+    height: 40rem;
+  }
+  .mainproyect .proyecto .imgproyecto img {
+    width: 10rem;
+    height: 15rem;
+  }
+  .mainproyect .btn-izquierda,
+  .mainproyect .btn-derecha {
+    position: absolute;
+    top: 35%;
+    transform: translateY(50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .mainproyect .btn-izquierda {
+    left: 0;
+  }
+
+  .mainproyect .btn-derecha {
+    right: 0;
+  }
+}
