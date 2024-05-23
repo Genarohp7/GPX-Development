@@ -21,6 +21,29 @@
   font-size: 3rem;
 }
 
+/* submenu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.nav-item.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 0.25rem 1.5rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #16181b;
+}
+
 .text-icon .fas {
   font-size: 3rem;
 }
@@ -64,9 +87,12 @@
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .mobil {
     position: relative;
-    top: 220px;
+    top: 60px;
   }
 
+  #menuBar.active {
+    transform: translateX(0%);
+  }
   .selfteam {
     position: relative;
     height: 50vh;

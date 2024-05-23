@@ -7,6 +7,51 @@
 // Scripts
 //
 
+// window.addEventListener("DOMContentLoaded", (event) => {
+//   // Navbar shrink function
+//   var navbarShrink = function () {
+//     const navbarCollapsible = document.body.querySelector("#mainNav");
+//     if (!navbarCollapsible) {
+//       return;
+//     }
+//     if (window.scrollY === 0) {
+//       navbarCollapsible.classList.remove("navbar-shrink");
+//     } else {
+//       navbarCollapsible.classList.add("navbar-shrink");
+//     }
+//   };
+
+//   // Shrink the navbar
+//   navbarShrink();
+
+//   // Shrink the navbar when page is scrolled
+//   document.addEventListener("scroll", navbarShrink);
+
+//   // Activate Bootstrap scrollspy on the main nav element
+//   const mainNav = document.body.querySelector("#mainNav");
+//   if (mainNav) {
+//     new bootstrap.ScrollSpy(document.body, {
+//       target: "#mainNav",
+//       rootMargin: "0px 0px -40%",
+//     });
+//   }
+
+//   // Collapse responsive navbar when toggler is visible
+//   const navbarToggler = document.body.querySelector(".navbar-toggler");
+//   const responsiveNavItems = [].slice.call(
+//     document.querySelectorAll("#navbarResponsive .nav-link")
+//   );
+//   responsiveNavItems.map(function (responsiveNavItem) {
+//     responsiveNavItem.addEventListener("click", () => {
+//       if (window.getComputedStyle(navbarToggler).display !== "none") {
+//         navbarToggler.click();
+//       }
+//     });
+//   });
+// });
+
+//prueba responsive aun
+
 window.addEventListener("DOMContentLoaded", (event) => {
   // Navbar shrink function
   var navbarShrink = function () {
@@ -42,7 +87,49 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.querySelectorAll("#navbarResponsive .nav-link")
   );
   responsiveNavItems.map(function (responsiveNavItem) {
-    responsiveNavItem.addEventListener("click", () => {
+    responsiveNavItem.addEventListener("click", (event) => {
+      if (
+        window.getComputedStyle(navbarToggler).display !== "none" &&
+        !responsiveNavItem.classList.contains("dropdown-toggle")
+      ) {
+        navbarToggler.click();
+      }
+    });
+  });
+
+  // Dropdown menu for "Proyectos"
+  const proyectosNavItem = document.querySelector(".nav-item.dropdown");
+  const submenu = document.querySelector(".dropdown-menu");
+
+  // Toggle submenu on click for both desktop and mobile
+  const toggleSubmenu = function (event) {
+    if (window.innerWidth < 992) {
+      // Mobile size
+      event.preventDefault();
+      event.stopPropagation();
+      proyectosNavItem.classList.toggle("show");
+      submenu.classList.toggle("show");
+    }
+  };
+
+  proyectosNavItem.addEventListener("click", toggleSubmenu);
+
+  // Close submenu when clicking outside
+  document.addEventListener("click", function (event) {
+    if (window.innerWidth < 992 && !proyectosNavItem.contains(event.target)) {
+      proyectosNavItem.classList.remove("show");
+      submenu.classList.remove("show");
+    }
+  });
+
+  // Close submenu when an item is clicked
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+  dropdownItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+      proyectosNavItem.classList.remove("show");
+      submenu.classList.remove("show");
+
+      // Collapse the main navbar if toggler is visible (for mobile)
       if (window.getComputedStyle(navbarToggler).display !== "none") {
         navbarToggler.click();
       }
