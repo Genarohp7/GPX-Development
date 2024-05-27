@@ -51,7 +51,7 @@
 /* on index  */
 .move {
   position: relative !important;
-  top: 150px;
+  top: 30px;
 }
 
 /* servicios */
@@ -85,6 +85,10 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
+  .move {
+    position: relative !important;
+    top: 150px;
+  }
   .mobil {
     position: relative;
     top: 60px;
