@@ -8607,6 +8607,7 @@ fieldset:disabled .btn {
 
 .text-white-50 {
   background-color: rgba(255, 255, 255, 15%);
+  text-align: justify;
   font-weight: 500;
   font-size: 1rem;
   color: #000;

@@ -159,14 +159,14 @@
     margin: 1rem;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
   }
 
   .socios .socio {
     position: relative;
     bottom: 20px;
     width: 25vw;
-    height: 20vh;
+    height: 12vh;
   }
 
   .img-fluid {
