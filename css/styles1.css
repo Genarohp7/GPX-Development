@@ -73,6 +73,32 @@
 
 /* servicios */
 
+.text {
+  padding-top: 5rem;
+  background: #fff;
+}
+
+.socios {
+  width: 100vw;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.socios .socio {
+  position: relative;
+  bottom: 20px;
+  width: 25vw;
+  height: 55vh;
+}
+
+.img-fluid {
+  position: relative;
+  max-width: 100%;
+  height: 70rem;
+}
+
 .selfteam {
   position: relative;
   height: 100vh;
@@ -117,6 +143,11 @@
 
   /* nosotros */
 
+  .text {
+    padding-top: 5rem;
+    background: #fff;
+  }
+
   .socios {
     width: 100vw;
     margin: 1rem;
@@ -127,7 +158,7 @@
 
   .socios .socio {
     position: relative;
-    bottom: 50px;
+    bottom: 20px;
     width: 25vw;
     height: 20vh;
   }
@@ -136,7 +167,7 @@
     position: relative;
     bottom: 30px;
     max-width: 100%;
-    height: 25rem;
+    height: 20rem;
   }
 
   .selfteam {
@@ -167,6 +198,26 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
+  .text {
+    position: relative;
+    top: 7px;
+    padding-top: 3rem;
+    background: #fff;
+  }
+
+  .socios .socio {
+    position: relative;
+    bottom: 20px;
+    width: 25vw;
+    height: 25vh;
+  }
+
+  .img-fluid {
+    position: relative;
+    max-width: 100%;
+    height: 40rem;
+  }
+
   .text-center {
     text-align: center !important;
     padding-top: 10%;
