@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.tituloproyecto {
+  width: 30vw;
+}
+
 .mainproyect .proyecto .imgproyecto {
   display: flex;
   overflow: hidden;
@@ -32,8 +36,7 @@
   transform: scale(1.1);
 }
 
-.mainproyect .btn-izquierda,
-.mainproyect .btn-derecha {
+.mainproyect .btn-izquierda {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -42,6 +45,13 @@
   border: none;
   padding: 10px;
   cursor: pointer;
+  display: none;
+}
+
+.mainproyect .btn-derecha {
+  position: relative;
+  bottom: 30px;
+  left: 180px;
 }
 
 .mainproyect .btn-izquierda {
@@ -81,12 +91,15 @@
     width: 20rem;
     height: 40rem;
   }
+
+  .tituloproyecto {
+    width: 10rem;
+  }
   .mainproyect .proyecto .imgproyecto img {
     width: 10rem;
     height: 15rem;
   }
-  .mainproyect .btn-izquierda,
-  .mainproyect .btn-derecha {
+  .mainproyect .btn-izquierda {
     position: absolute;
     top: 35%;
     transform: translateY(50%);
@@ -95,6 +108,12 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+  }
+
+  .mainproyect .btn-derecha {
+    position: relative;
+    bottom: 30px;
+    left: 75px;
   }
 
   .mainproyect .btn-izquierda {
