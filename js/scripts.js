@@ -104,7 +104,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   // Toggle submenu on click for desktop
   const toggleSubmenu = function (event) {
-    if (window.innerWidth >= 992) {
+    if (window.innerWidth >= 900) {
       // Desktop size
       event.preventDefault();
       event.stopPropagation();
@@ -136,12 +136,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
           window.location.href = href;
         }, 350); // Adjust the timeout to match the animation duration
       } else {
-        proyectosNavItem.classList.remove("show");
-        submenu.classList.remove("show");
+        // Desktop size: Navigate directly to the link
+        window.location.href = item.getAttribute("href");
       }
     });
   });
 });
+
 //proyectos secction doobarin
 
 // let selfTeam = document.getElementById("doobarin");
