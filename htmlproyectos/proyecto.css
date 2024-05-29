@@ -10,7 +10,7 @@
 }
 
 .mainproyect .proyecto {
-  width: 50vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,19 +20,20 @@
 }
 
 .tituloproyecto {
-  width: 30vw;
+  width: 43vw;
 }
 
 .mainproyect .proyecto .imgproyecto {
   display: flex;
+  justify-content: center;
   overflow: hidden;
-  width: 30vw;
-  height: 40vh;
+  width: 50vw;
+  height: 65vh;
 }
 
 .mainproyect .proyecto .imgproyecto img {
-  width: 30vw;
-  height: 40vh;
+  width: 40vw;
+  height: 60vh;
   transform: scale(1.1);
 }
 
@@ -50,8 +51,8 @@
 
 .mainproyect .btn-derecha {
   position: relative;
-  bottom: 30px;
-  left: 180px;
+  bottom: 45px;
+  left: 270px;
 }
 
 .mainproyect .btn-izquierda {
@@ -74,8 +75,7 @@
   }
 
   .mainproyect .proyecto {
-    width: 70vw;
-    height: 20vh;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,16 +88,16 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 20rem;
-    height: 40rem;
+    width: 80vw;
+    height: 40vh;
   }
 
   .tituloproyecto {
-    width: 10rem;
+    width: 65vw;
   }
   .mainproyect .proyecto .imgproyecto img {
-    width: 10rem;
-    height: 15rem;
+    width: 60vw;
+    height: 35vh;
   }
   .mainproyect .btn-izquierda {
     position: absolute;
@@ -112,8 +112,70 @@
 
   .mainproyect .btn-derecha {
     position: relative;
-    bottom: 30px;
-    left: 75px;
+    bottom: 37px;
+    left: 120px;
+  }
+
+  .mainproyect .btn-izquierda {
+    left: 0;
+  }
+
+  .mainproyect .btn-derecha {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+  .mainproyect {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+
+  .mainproyect .proyecto {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .mainproyect .proyecto .imgproyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .tituloproyecto {
+    width: 65vw;
+  }
+  .mainproyect .proyecto .imgproyecto img {
+    width: 60vw;
+    height: 35vh;
+  }
+  .mainproyect .btn-izquierda {
+    position: absolute;
+    top: 35%;
+    transform: translateY(50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .mainproyect .btn-derecha {
+    position: relative;
+    bottom: 40px;
+    left: 250px;
   }
 
   .mainproyect .btn-izquierda {
