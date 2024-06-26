@@ -725,6 +725,7 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
@@ -3987,7 +3988,7 @@ fieldset:disabled .btn {
 @media screen and (min-width: 1px) and (max-width: 480px) {
   .navbar .container .logo-main img {
     position: relative;
-    right: 15px;
+    right: 5px;
     width: 3rem;
     height: 3rem;
   }
@@ -11390,7 +11391,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: #fff;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11468,7 +11469,10 @@ body {
   font-size: 1.7rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 10)
+  );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -11565,7 +11569,6 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
 }
 .contact-section .card h4,
 .contact-section .card .h4 {
