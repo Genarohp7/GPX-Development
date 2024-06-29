@@ -73,6 +73,13 @@
   justify-content: space-around;
 }
 
+.socio {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 100%; /* Ajusta la altura al 100% del contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen y llena el contenedor */
+  object-position: center; /* Centra la imagen en el contenedor */
+}
+
 /* servicios */
 
 .text {
