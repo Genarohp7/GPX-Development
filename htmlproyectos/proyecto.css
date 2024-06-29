@@ -12,6 +12,7 @@
 .mainproyect .proyecto {
   width: 100vw;
   display: flex;
+  margin-bottom: 5%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -29,65 +30,48 @@
   overflow: hidden;
   width: 50vw;
   height: 65vh;
+  position: relative; /* Asegura que el botón se posicione con respecto a este div */
 }
 
 .mainproyect .proyecto .imgproyecto img {
-  width: 40vw;
-  height: 60vh;
-  transform: scale(1.1);
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 100%; /* Ajusta la altura al 100% del contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen y llena el contenedor */
+  object-position: center; /* Centra la imagen en el contenedor */
 }
 
 .mainproyect .btn-izquierda {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
   display: none;
 }
 
 .mainproyect .btn-derecha {
-  position: relative;
-  bottom: 45px;
-  left: 270px;
+  font-size: 2rem; /* Ajusta el tamaño del símbolo */
+  position: absolute;
+  bottom: -6%; /* Ajusta según sea necesario */
+  right: 275px; /* Ajusta para mover el botón hacia la izquierda */
+  background-color: transparent; /* Fondo transparente */
+  color: #34dbca; /* Color azul más claro para el símbolo */
+  border: none; /* Sin borde */
+  padding: 15px; /* Aumenta el padding para hacer el botón más grande */
+  cursor: pointer;
+  z-index: 10; /* Asegura que el botón esté encima del contenido */
+  transition: color 0.3s ease; /* Añade una transición suave para el efecto hover */
 }
 
-.mainproyect .btn-izquierda {
-  left: 0;
+.mainproyect .btn-derecha:hover {
+  color: gray; /* Color gris al pasar el cursor */
 }
 
-.mainproyect .btn-derecha {
-  right: 0;
-}
-
-@media screen and (min-width: 1px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .mainproyect {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     top: 100px;
   }
 
   .mainproyect .proyecto {
     width: 80vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    position: relative;
   }
+
   .mainproyect .proyecto .imgproyecto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     width: 80vw;
     height: 40vh;
   }
@@ -95,61 +79,29 @@
   .tituloproyecto {
     width: 65vw;
   }
+
   .mainproyect .proyecto .imgproyecto img {
-    width: 60vw;
-    height: 35vh;
-  }
-  .mainproyect .btn-izquierda {
-    position: absolute;
-    top: 35%;
-    transform: translateY(50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
   }
 
   .mainproyect .btn-derecha {
-    position: relative;
-    bottom: 37px;
-    left: 120px;
-  }
-
-  .mainproyect .btn-izquierda {
-    left: 0;
-  }
-
-  .mainproyect .btn-derecha {
-    right: 0;
+    font-size: 2rem; /* Ajusta el tamaño del símbolo para móvil */
+    bottom: -6%; /* Ajusta según sea necesario para móvil */
+    right: -15%;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
   .mainproyect {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     top: 100px;
   }
 
   .mainproyect .proyecto {
     width: 80vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    position: relative;
   }
+
   .mainproyect .proyecto .imgproyecto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     width: 80vw;
     height: 40vh;
   }
@@ -157,32 +109,15 @@
   .tituloproyecto {
     width: 65vw;
   }
+
   .mainproyect .proyecto .imgproyecto img {
-    width: 60vw;
-    height: 35vh;
-  }
-  .mainproyect .btn-izquierda {
-    position: absolute;
-    top: 35%;
-    transform: translateY(50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
   }
 
   .mainproyect .btn-derecha {
-    position: relative;
-    bottom: 40px;
-    left: 250px;
-  }
-
-  .mainproyect .btn-izquierda {
-    left: 0;
-  }
-
-  .mainproyect .btn-derecha {
-    right: 0;
+    font-size: 2.5rem; /* Ajusta el tamaño del símbolo para tablet */
+    bottom: -6%; /* Ajusta según sea necesario para tablet */
+    right: -9%; /* Ajusta para mover el botón hacia la izquierda en tablet */
   }
 }
